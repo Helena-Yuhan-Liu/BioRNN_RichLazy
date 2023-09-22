@@ -1,6 +1,6 @@
 ﻿# BioRNN_RichLazy
 
-This repository ( tested in PyTorch 1.10.2, Torchvision 0.4.2, Neurogym 0.0.2, and Numpy 1.18.1) conducts recurrent neural network (RNN) training across different initial hidden weight effective ranks and logs the associated training laziness measures. The laziness of the learning regime is quantified using hidden weight change norm, representation alignment, and tangent kernel alignment [1-3].
+This repository (tested in PyTorch 1.10.2, Torchvision 0.4.2, Neurogym 0.0.2, and Numpy 1.18.1) conducts recurrent neural network (RNN) training across different initial hidden weight ranks and logs the associated laziness measures that indicate the amount of network adjustments over the course of training. The laziness of the learning regime is quantified using hidden weight change norm, representation alignment, and tangent kernel alignment [1-3].
 
 ## Usage
 
@@ -8,7 +8,7 @@ The primary script is `main.py`. Helper functions for data storage and retrieval
 
 ``python3 main.py``
 
-Under the default settings, the code should complete in less than 30 minutes.
+Under the default settings provided, the code should complete in less than 30 minutes.
 
 ## References
 
